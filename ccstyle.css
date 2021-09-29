@@ -1,0 +1,324 @@
+body {
+
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0;
+    background-size: cover;
+    background-color:white;
+
+}
+
+
+header {
+
+    background-image:url(https://currycorner.nl/assets/images/logo-small.png), url(https://currycorner.nl/assets/images/backgrounds/1.jpg);
+    background-size: 300px, cover;
+    background-repeat: no-repeat, no-repeat;
+    padding-top:35px; /* ruimte boven de buttons */
+    padding-bottom:220px; /*ruimte onder de buttons */
+
+}
+
+*{
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+/* navigatie */
+
+#emptyspace {
+
+    flex-grow:1; /* flexbox */
+}
+
+nav{
+
+    display:flex;
+    align-items: flex-start;
+
+}
+
+.navi {
+
+    outline-width: 0px;
+    background-color: #6A1818;
+    padding: 5px;
+    margin: 0px 5px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    cursor:pointer;
+
+}
+
+#navi:hover {
+
+    background-color:red;
+}
+
+#navi a, #navi a:visited {
+
+    color:white;
+
+}
+
+a {
+
+    color:white;
+
+}
+
+/*center pagina met flexbox*/
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center {
+
+    text-align: center;
+    border: 1px solid #660000;
+    border-radius: 5px;
+    width: 80vw;
+    padding-bottom: 40px;
+    margin: 30px;
+
+}
+
+label {
+
+    float: right;
+    display: inline-grid;
+    width: 200px;
+    font-weight: bold;
+    color: white;
+
+}
+
+#naam {
+
+    color: grey;
+    background: none;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 6px 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+
+}
+
+#telefoonnummer {
+
+    color: grey;
+    background: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 6px 0;
+
+}
+
+#email {
+
+    color: grey;
+    background: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 6px 0;
+
+}
+
+#dd-mm-jjjj {
+
+    font-family: sans-serif;
+    color: grey;
+    background: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 6px 0;
+
+}
+
+#tijd {
+
+    font-family: sans-serif;
+    color: grey;
+    background: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 6px 0;
+
+}
+
+#personen {
+
+    color: grey;
+    background: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 6px 0;
+
+}
+
+#opmerkingen {
+
+    color: grey;
+    width: 400px;
+    height: 100px;
+    background: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 6px 0;
+
+}
+
+.btn{
+
+    background-color: #5DB85B;
+    border: 4px solid #5DB85B;
+    border-radius: 6px;
+    color: white;
+    padding: 5px;
+    text-shadow: 1px 1px 3px black;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 6px 0;
+
+}
+
+/*lettertypes*/
+
+h1 {
+
+    color: white;
+    padding-bottom: 15px;
+    background-color: #6A1818;
+    padding-top: 15px;
+    font-family: 'Times New Roman', serif;
+
+}
+
+h2 {
+
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    bottom: 120px;
+    font-size: 40px;
+    color: white;opacity:100.0;
+    background: black;opacity:0.7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+h3 {
+
+    background-color: #430302;
+
+}
+
+.text {
+
+    color: #6A1818;
+    padding-bottom: 15px;
+    padding-top: 20px;
+
+}
+
+/*footer*/
+
+.title {
+
+    font-size: 20px;
+    background-color: #430302;
+    padding-left: 10px;
+    border: 3px solid #430302;
+    border-radius: 3px;
+
+}
+
+footer {
+
+    background-color: #6A1818;
+
+}
+
+.foot {
+
+    position: relative;
+    width: 380px;
+    padding: 25px;
+    text-align: left;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #6A1818;
+    color: white;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        display:block;
+    }
+    /* ruimte voor het logo */
+    header {
+        background-image:url(https://currycorner.nl/assets/images/logo-small.png), url(https://currycorner.nl/assets/images/backgrounds/1.jpg);
+        background-size: 300px, cover;
+        background-position: center top, center;
+        padding-top:235px; /* ruimte boven de buttons */
+        padding-bottom:20px;
+    }
+
+    #navi {
+        margin:5px;
+    }
+
+    #main {
+        margin-top: 0px;
+        display: block;
+
+    }
+
+    .center {
+        margin-top:20px;
+        width: 80vw;
+
+    }
+
+    .extra {
+        width: 80vw;
+    }
+}
