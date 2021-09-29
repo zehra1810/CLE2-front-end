@@ -137,26 +137,26 @@ if (isset($_POST['submit'])) {
     <form action="<?= htmlspecialchars($_SERVER['REQUEST_URI']); ?>" method="post" enctype="multipart/form-data">
         <div class="data-field">
             <label for="Uw Naam"></label>
-            <input id="naam" type="text" placeholder="Uw Naam"  name="naam" value="<?= (isset($name) ? $name : ''); ?>" />
+            <input class="info" type="text" placeholder="Uw Naam"  name="naam" value="<?= (isset($name) ? $name : ''); ?>" />
             <span><?= (isset($errors['Uw Naam']) ? $errors['Uw Naam'] : '') ?></span><br>
             <label for="Uw Telefoonnummer"></label>
-            <input id="telefoonnummer" type="text" placeholder="Uw Telefoonnummer" name="telefoonnummer" value="<?= (isset($telnr) ? $telnr : ''); ?>" required/>
+            <input class="info" type="text" placeholder="Uw Telefoonnummer" name="telefoonnummer" value="<?= (isset($telnr) ? $telnr : ''); ?>" required/>
             <label for="Uw Email"></label><br>
-            <input id="email" type="email" placeholder="Uw E-mail" name="mail" value="<?= (isset($mail) ? $mail : ''); ?>" required/>
+            <input class="info" type="email" placeholder="Uw E-mail" name="mail" value="<?= (isset($mail) ? $mail : ''); ?>" required/>
         </div>
 
         <div class="data-field">
             <label for="dd-mm-jjjj"></label>
-            <input id="dd-mm-jjjj" type="date" placeholder="Datum" name="datum" value="<?= (isset($datum) ? $datum : ''); ?>" required/><br>
+            <input class="info" type="date" placeholder="Datum" name="datum" value="<?= (isset($datum) ? $datum : ''); ?>" required/><br>
             <label for="Tijd"></label>
-            <input id="tijd" type="time" placeholder="Tijd" name="tijd" value="<?= (isset($time) ? $time : ''); ?>" /><br>
+            <input class="info" type="time" placeholder="Tijd" name="tijd" value="<?= (isset($time) ? $time : ''); ?>" /><br>
             <label for="Aantal Personen"></label>
-            <input id="personen" type="number" placeholder="Aantal Personen" name="personen" value="<?= (isset($personen) ? $personen : ''); ?>" required/><br>
+            <input class="info" type="number" placeholder="Aantal Personen" name="personen" value="<?= (isset($personen) ? $personen : ''); ?>" required/><br>
         </div>
 
         <div class="data-field">
             <label for="Opmerkingen"></label>
-            <input id="opmerkingen" type="text" placeholder="Opmerkingen" name="opmerkingen" value="<?= (isset($opmerkingen) ? $opmerkingen : ''); ?>"/>
+            <input class="info" type="text" placeholder="Opmerkingen" name="opmerkingen" value="<?= (isset($opmerkingen) ? $opmerkingen : ''); ?>"/>
         </div>
 
         <div class="data-submit">
